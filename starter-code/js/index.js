@@ -9,12 +9,17 @@ function getPriceByProduct(itemNode) {
 function updatePriceByProduct(productPrice, index) {
 
 }
-
+// Iteration 1
 function getTotalPrice() {
-  let basePrice = 25;
-  let userInput = document.getElementById("qty").value
-  let sum = basePrice * userInput;
-  let totalItemPrice = document.querySelector(".total-price span").innerHTML = `$${sum}`;
+  let basePrice = document.querySelectorAll(".product-cost");
+  let userInput = document.querySelectorAll(".qty-class")
+  console.log(basePrice, userInput)
+  let sum = basePrice.map(function (ele, ind) {
+    return ele.innerText * userImput[ind].value
+  })
+  console.log(sum)
+  //let sum = basePrice * userInput;
+  let totalItemPrice = document.querySelectorAll(".total-price span").innerHTML = `${sum}`;
   console.log(totalItemPrice);
 }
 

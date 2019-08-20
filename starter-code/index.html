@@ -12,24 +12,44 @@
 </head>
 
 <body>
+  <!-- Product 1 -->
   <div class="product">
-    <div class="product-title"><span>Example</span></div>
-    <div class="product-cost"><span>$25.00</span></div>
+    <div class="product-name"><span>Example</span></div>
+    <div >$<span class="product-cost">25.00</span></div>
     <div class="product-quantity">
       <form action="#">
         <label for="qty">QTY</label>
-        <input id="qty" type="text" placeholder=" 0" value="2">
+        <input id="qty" class="qty-class" type="text" placeholder=" 0" value="">
       </form>
     </div>
     <div class="total-price">
-      <span>$0.00</span>
+      $<span>0.00</span>
     </div>
     <button class="btn-delete">
       Delete
     </button>
-    <div id="calc-prices-button">
-      <button>Calculate Prices</button>
+  </div>
+
+  <!-- Product 2 -->
+
+  <div class="product">
+    <div class="product-name"><span>Example 2</span></div>
+    <div >$<span class="product-cost">15.00</span></div>
+    <div class="product-quantity">
+      <form action="#">
+        <label for="qty-2">QTY</label>
+        <input id="qty-2" class="qty-class" type="text" placeholder=" 0" value="">
+      </form>
     </div>
+    <div class="total-price">
+      $<span>0.00</span>
+    </div>
+    <button class="btn-delete">
+      Delete
+    </button>
+  </div>
+  <div id="calc-prices-button">
+    <button>Calculate Prices</button>
   </div>
 </body>
 
